@@ -1,0 +1,23 @@
+<style>
+#carta{
+background: url("carta-de-tarot");
+height: auto;
+max-width: 200px ;
+min-width 100px;
+position: relative;
+
+.indicador{
+position: absolute;
+top: px;
+left: px;
+right: px;
+bottom: px;/rem/em/ %	 
+
+
+</style>
+
+<div id="carta" >
+	<div class"indicador">
+</div>
+
+</div>
