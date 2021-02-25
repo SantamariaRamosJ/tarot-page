@@ -7,6 +7,7 @@
 
 body {
     background-color: rgba(115, 141, 150, 0.1);
+    overflow-x: hidden;
   }
 
 #header{
@@ -14,6 +15,11 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 7rem;
+}
+
+#header-img {
+  max-width: 386px;
+  width: 100%;
 }
 
 
@@ -35,9 +41,9 @@ body {
 
   .arcanos-cont{
     display: flex;
-   justify-content: center;
-   align-items: center; 
-}
+    justify-content: center;
+    align-items: center; 
+  }
 
   .arcanos{
 
@@ -45,22 +51,39 @@ body {
     width: 06rem;
     border-radius: 10px;
     display: none;  
-   
- }
+  }
 
  .arcanos:hover{
-
     height: auto;
     width: 06rem;
     border-radius: 10px;
     /* display: none;   */
     transition: all .2 ease-in-out;
     transform: scale(1.1);
-    display: flex;
+ }
+
+ .carta {
+    transition: opacity 1000ms , visibility  1000ms, width 1000ms , margin 1000ms ;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1rem;
+    height: auto;
+    max-width: 100px;
+    max-height: 200px;
+    display: block;
  }
 
   .show {
-    display: block;
+    opacity: 1;
+    visibility: visible; 
+    width: 80%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: opacity 1000ms , visibility 1000ms, width 0.2s , margin 1000ms ;
   }
   
   /* Style the buttons */
