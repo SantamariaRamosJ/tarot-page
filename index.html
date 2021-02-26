@@ -18,6 +18,7 @@
     </div>
 
     <div class="container d-flex justify-content-center" id="myBtnContainer" class="d-flex justify-content-center mb-5">
+        <input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
         <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
         <button class="btn" onclick="filterSelection('mayores')"> Mayores</button>
         <button class="btn" onclick="filterSelection('menores')"> Menores</button>
@@ -26,14 +27,23 @@
     </div>
 
 <div class="container my-5 h-100">
-    <div class="container d-flex justify-content-center flex-row mb-5 h-100 flex-wrap">
-        <div class="">
-            <img class="arcanos mayores carta" src="./img/el-loco.jpg">
+    <div  class="container d-flex justify-content-center flex-row mb-5 h-100 flex-wrap">
+        <ul id="myUL">
+            <div>
+                <li><a href="loco">
+                    <img class="arcanos mayores carta" src="./img/el-loco.jpg"> 
+                    <p class="text-center">Loco</p>
+                </a></li>
+            </div>
             <!-- <h6 class="text-center mayores pb-3">El Loco</h6> -->
-        </div>
-        <div class="">
-            <img class="arcanos mayores carta" src="./img/el-mago.jpg">
-        </div>
+        
+            <div>
+                <li><a href="mago">
+                    <img class="arcanos mayores carta" src="./img/el-mago.jpg">
+                    <p class="text-center">Mago</p>
+                </a></li>
+            </div>
+        </ul>
         <div class="">
             <img class="arcanos mayores carta" src="./img/papisa.jpg">
         </div>
@@ -94,6 +104,36 @@
         </div>
         <div class="">
             <img class="arcanos mayores carta" src="./img/elmundo.jpg">
+        </div>
+        <div class="">
+            <img class="arcanos menores carta" src="./img/as-espada.jpg">
+        </div>
+        <div class="">
+            <img class="arcanos menores carta" src="./img/as-bastos.jpg">
+        </div>
+        <div class="">
+            <img class="arcanos menores carta" src="./img/as-copas.jpg">
+        </div>
+        <div class="">
+            <img class="arcanos menores carta" src="./img/as-oros.jpg">
+        </div>
+        <div class="">
+            <img class="arcanos menores carta" src="./img/reina-bastos.jpg">
+        </div>
+        <div class="">
+            <img class="arcanos menores carta" src="./img/reina-copas.jpg">
+        </div>
+        <div class="">
+            <img class="arcanos menores carta" src="./img/reina-oros.jpg">
+        </div>
+        <div class="">
+            <img class="arcanos menores carta" src="./img/reina-espadas.jpg">
+        </div>
+        <div class="">
+            <img class="arcanos menores carta" src="./img/3-oros.jpg">
+        </div>
+        <div class="">
+            <img class="arcanos menores carta" src="./img/5-oros.jpg">
         </div>
     </div>
 </div>
