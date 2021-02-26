@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <!--CSS-->
+    <link rel="stylesheet" href="test1.css">
+
+    <title>Tarot</title>
+</head>
+<body>
+    
+    <div class="container d-flex justify-content-center" id="header">
+        <img id="header-img" src="./img/logo2.png"> 
+    </div>
+
+    <div class="container d-flex justify-content-center" id="myBtnContainer" class="d-flex justify-content-center mb-5">
+        <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
+        <button class="btn" onclick="filterSelection('mayores')"> Mayores</button>
+        <button class="btn" onclick="filterSelection('menores')"> Menores</button>
+        <!-- <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+        <button class="btn" onclick="filterSelection('colors')"> Colors</button> -->
+    </div>
+
+<div class="container my-5 h-100">
+    <div class="container d-flex justify-content-center flex-row mb-5 h-100 flex-wrap">
+        <div class="">
+            <img class="arcanos mayores carta" src="./img/el-loco.jpg">
+        </div>    
+        <img class="arcanos menores carta" src="./img/el-mago.jpg">
+            <img class="arcanos mayores carta" src="./img/el-loco.jpg">
+            <img class="arcanos mayores carta" src="./img/el-loco.jpg">
+            <img class="arcanos mayores carta" src="./img/el-loco.jpg">
+    </div>
+</div>
+
+
+<!--Scripts-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+
+
+</body>
+</html>

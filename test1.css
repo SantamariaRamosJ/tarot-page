@@ -39,7 +39,13 @@ body {
 
   /* The "show" class is added to the filtered elements */
 
- 
+  .arcanos-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+
 
  .carta {
     transition: opacity 1000ms , visibility  1000ms, width 1000ms , margin 1000ms ;
@@ -48,9 +54,7 @@ body {
     width: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 1rem;;
-    margin-top: 1rem;
-    /* padding-bottom: 1rem; */
+    margin-bottom: 1rem;
     height: auto;
     max-width: 100px;
     max-height: 200px;
@@ -59,9 +63,9 @@ body {
  }
 
  .carta:hover {
- transform: scale(1.1);
-  
-}
+     transform: scale(1.1);
+     /* transition: all 0.2 ease-in-out; */
+ }
 
   .show {
     opacity: 1;
@@ -71,7 +75,7 @@ body {
     margin-right: 2rem;
     cursor: pointer;
     transition: opacity 1000ms , visibility 1000ms, width 0.2s , margin 1000ms ;
-  }
+  } 
   
   /* Style the buttons */
   .btn {
