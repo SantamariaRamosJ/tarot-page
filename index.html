@@ -18,209 +18,211 @@
     
     </div>
 
-    <div class="container d-flex justify-content-center" id="myBtnContainer" class="d-flex justify-content-center mb-5">
-        <input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar carta">
-        <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
-        <button class="btn" onclick="filterSelection('mayores')"> Mayores</button>
-        <button class="btn" onclick="filterSelection('menores')"> Menores</button>
-        <!-- <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-        <button class="btn" onclick="filterSelection('colors')"> Colors</button> -->
+    <div class="container d-flex justify-content-center mb-5 flex-wrap" id="myBtnContainer" >
+        <input style="min-width: 350px;" class="mb-4"  type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar carta">
+        <div class="d-flex justify-content-center flex-nowrap" style="max-height: 50px;" >
+            <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button>
+            <button class="btn" onclick="filterSelection('mayores')"> Mayores</button>
+            <button class="btn" onclick="filterSelection('menores')"> Menores</button>
+            <!-- <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+            <button class="btn" onclick="filterSelection('colors')"> Colors</button> -->
+        </div>
     
     </div>
 
 <div class="container my-5 h-100">
     <div id="myUL" class="container d-flex justify-content-center flex-row mb-5 h-100 flex-wrap">
         
-        <div class="arc">
+        <div class="carta arc arcanos mayores ">
             <a href="#">
-                <img class="arcanos mayores carta" src="./img/el-loco.jpg"> 
-                <h6 class=" arcText text-center">El Loco</h6>
+                <img class="img-carta" src="./img/el-loco.jpg"> 
+                <h6 class="text-img">El Loco</h6>
             </a>
         </div>
-        <div class="arc">
-                <a href="#">
-                    <img class="arcanos mayores carta  card" src="./img/el-mago.jpg">
-                    <h6 class="text-center">El Mago</h6>
+        <div class=" carta arc arcanos mayores ">
+            <a href="#">
+                <img class="img-carta" src="./img/el-mago.jpg">
+                <h6 class="text-img">El Mago</h6>
             </a>
         </div> 
-        <div class="arc">
+        <div class="carta arc arcanos mayores ">
             <a href="#">
-                <img class="arcanos mayores carta" src="./img/papisa.jpg">
-                <h6 class="text-center">La Papisa</h6>
+                <img class="img-carta" src="./img/papisa.jpg">
+                <h6 class="text-img">La Papisa</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="#">
-                <img class="arcanos mayores carta" src="./img/emperatriz.jpg">
-                <h6 class="text-center">La Emperatriz</h6>
+                <img class="img-carta" src="./img/emperatriz.jpg">
+                <h6 class="text-img">La Emperatriz</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/emperador.jpg">
-                <h6 class="text-center">El Emperador</h6>
+                <img class="img-carta" src="./img/emperador.jpg">
+                <h6 class="text-img">El Emperador</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/el-papa.jpg">
-                <h6 class="text-center">El Papa</h6>
+                <img class="img-carta" src="./img/el-papa.jpg">
+                <h6 class="text-img">El Papa</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/enamorado.jpg">
-                <h6 class="text-center">Los Enamorados</h6>
+                <img class="img-carta" src="./img/enamorado.jpg">
+                <h6 class="text-img">Los Enamorados</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/carro.jpg">
-                <h6 class="text-center">El Carro</h6>
+                <img class="img-carta" src="./img/carro.jpg">
+                <h6 class="text-img">El Carro</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/justicia.jpg">
-                <h6 class="text-center">La Justicia</h6>
+                <img class="img-carta" src="./img/justicia.jpg">
+                <h6 class="text-img">La Justicia</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/ermitano.jpg">
-                <h6 class="text-center">El Ermitaño</h6>
+                <img class="img-carta" src="./img/ermitano.jpg">
+                <h6 class="text-img">El Ermitaño</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/ruedafortuna.jpg">
-                <h6 class="text-center">La Rueda de la Fortuna</h6>
+                <img class="img-carta" src="./img/ruedafortuna.jpg">
+                <h6 class="text-img">La Rueda de la Fortuna</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/fuerza.jpg">
-                <h6 class="text-center">La Fuerza</h6>
+                <img class="img-carta" src="./img/fuerza.jpg">
+                <h6 class="text-img">La Fuerza</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/colgado.jpg">
-                <h6 class="text-center">El Colgado</h6>
+                <img class="img-carta" src="./img/colgado.jpg">
+                <h6 class="text-img">El Colgado</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/arcanotrece.jpg">
-                <h6 class="text-center">Arcano Trece</h6>
+                <img class="img-carta" src="./img/arcanotrece.jpg">
+                <h6 class="text-img">Arcano Trece</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/templanza.jpg">
-                <h6 class="text-center">La Templanza</h6>
+                <img class="img-carta" src="./img/templanza.jpg">
+                <h6 class="text-img">La Templanza</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/diablo.jpg">
-                <h6 class="text-center">El Diablo</h6>
+                <img class="img-carta" src="./img/diablo.jpg">
+                <h6 class="text-img">El Diablo</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/torre.jpg">
-                <h6 class="text-center">La Torre</h6>
+                <img class="img-carta" src="./img/torre.jpg">
+                <h6 class="text-img">La Torre</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/estrella.jpg">
-                <h6 class="text-center">La Estrella</h6>
+                <img class="img-carta" src="./img/estrella.jpg">
+                <h6 class="text-img">La Estrella</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/luna.jpg">
-                <h6 class="text-center">La Luna</h6>
+                <img class="img-carta" src="./img/luna.jpg">
+                <h6 class="text-img">La Luna</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/sol.jpg">
-                <h6 class="text-center">El Sol</h6>
+                <img class="img-carta" src="./img/sol.jpg">
+                <h6 class="text-img">El Sol</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/juicio.jpg">
-                <h6 class="text-center">El Juicio</h6>
+                <img class="img-carta" src="./img/juicio.jpg">
+                <h6 class="text-img">El Juicio</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos mayores">
             <a href="">
-                <img class="arcanos mayores carta" src="./img/elmundo.jpg">
-                <h6 class="text-center">El Mundo</h6>
+                <img class="img-carta" src="./img/elmundo.jpg">
+                <h6 class="text-img">El Mundo</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos menores">
             <a href="">
-                <img class="arcanos menores carta" src="./img/as-espada.jpg">
-                <h6 class="text-center">As de Espada</h6>
+                <img class="img-carta" src="./img/as-espada.jpg">
+                <h6 class="text-img">As de Espada</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos menores">
             <a href="">
-                <img class="arcanos menores carta" src="./img/as-bastos.jpg">
-                <h6 class="text-center">As de Bastos</h6>
+                <img class="img-carta" src="./img/as-bastos.jpg">
+                <h6 class="text-img">As de Bastos</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos menores">
             <a href="">
-                <img class="arcanos menores carta" src="./img/as-copas.jpg">
-                <h6 class="text-center">As de Copas</h6>
+                <img class="img-carta" src="./img/as-copas.jpg">
+                <h6 class="text-img">As de Copas</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos menores">
             <a href="">
-                <img class="arcanos menores carta" src="./img/as-oros.jpg">
-                <h6 class="text-center">As de Oros</h6>
+                <img class="img-carta" src="./img/as-oros.jpg">
+                <h6 class="text-img">As de Oros</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos menores">
             <a href="">
-                <img class="arcanos menores carta" src="./img/reina-bastos.jpg">
-                <h6 class="text-center">Reina de Bastos</h6>
+                <img class="img-carta" src="./img/reina-bastos.jpg">
+                <h6 class="text-img">Reina de Bastos</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos menores">
             <a href="">
-                <img class="arcanos menores carta" src="./img/reina-copas.jpg">
-                <h6 class="text-center">Reina de Copas</h6>
+                <img class="img-carta" src="./img/reina-copas.jpg">
+                <h6 class="text-img">Reina de Copas</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos menores">
             <a href="">
-                <img class="arcanos menores carta" src="./img/reina-oros.jpg">
-                <h6 class="text-center">Reina de Oros</h6>
+                <img class="img-carta" src="./img/reina-oros.jpg">
+                <h6 class="text-img">Reina de Oros</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos menores">
             <a href="">
-                <img class="arcanos menores carta" src="./img/reina-espadas.jpg">
-                <h6 class="text-center">Reina de espadas</h6>
+                <img class="img-carta" src="./img/reina-espadas.jpg">
+                <h6 class="text-img">Reina de espadas</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos menores">
             <a href="">
-                <img class="arcanos menores carta" src="./img/3-oros.jpg">
-                <h6 class="text-center">3 de oros</h6>
+                <img class="img-carta" src="./img/3-oros.jpg">
+                <h6 class="text-img">3 de oros</h6>
             </a>
         </div>
-        <div class="arc">
+        <div class="carta arc arcanos menores">
             <a href="">
-                <img class="arcanos menores carta" src="./img/5-oros.jpg">
-                <h6 class="text-center">5 de oros</h6>
+                <img class="img-carta" src="./img/5-oros.jpg">
+                <h6 class="text-img">5 de oros</h6>
             </a>
         </div>
         

@@ -27,6 +27,8 @@ body {
   overflow: hidden;
 }
 
+
+
   /* The "show" class is added to the filtered elements */
 .carta {
     transition: opacity 1000ms , visibility  1000ms, width 1000ms , margin 1000ms ;
@@ -38,16 +40,35 @@ body {
     margin-bottom: 1rem;;
     margin-top: 1rem;
     height: auto;
-    max-width: 100px;
-    max-height: 200px;
-    display: block;
+    max-width: 130px;
+    max-height: 260px;
     border-radius: 5px;
   }
 
-.carta:hover {
-  transform: scale(1.1);
+  .img-carta{
+    padding-bottom: 5px;
+  }
+
+  .img-carta:hover{
+    transform: scale(1.1);
   transition: all 200ms ease-in;
-  
+  }
+
+
+
+.carta img {
+  width: 100%;
+  height: auto;
+}
+
+.text-img{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 7px;
 }
 
 .show {
@@ -58,6 +79,7 @@ body {
     margin-right: 1.6rem;
     cursor: pointer;
     transition: opacity 1000ms , visibility 1000ms, width 0.2s , margin 1000ms ;
+    display: block;
   }
   
   /* Style the buttons */
@@ -86,7 +108,7 @@ body {
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 50%; /* Full-width */
   font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
+  padding: 12px 20px 12px ; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
   margin-right: 15px;
@@ -115,3 +137,4 @@ body {
 #myUL .arc a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
+
