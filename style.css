@@ -1,140 +1,149 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
 }
 
 body {
-    background-color: rgba(115, 141, 150, 0.1);
-    overflow-x: hidden;
-  }
+  background-color: rgba(115, 141, 150, 0.1);
+  overflow-x: hidden;
+}
 
 #header{
-    margin-top: 08rem;
-    width: 100%;
-    height: auto;
-    margin-bottom: 7rem;
+  margin-top: 08rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 7rem;
 }
 
 #header-img {
-  max-width: 386px;
-  width: 100%;
+max-width: 386px;
+width: 100%;
 }
 
 /*script*/
 .container {
-  overflow: hidden;
+overflow: hidden;
+}
+
+
+#myBtnContainer input[type=text] {
+  padding-left: 50px;
 }
 
 
 
-  /* The "show" class is added to the filtered elements */
+/* The "show" class is added to the filtered elements */
 .carta {
-    transition: opacity 1000ms , visibility  1000ms, width 1000ms , margin 1000ms ;
-    opacity: 0;
-    visibility: hidden;
-    width: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 1rem;;
-    margin-top: 1rem;
-    height: auto;
-    max-width: 130px;
-    max-height: 260px;
-    border-radius: 5px;
-  }
+  transition: opacity 1000ms , visibility  1000ms, width 1000ms , margin 1000ms ;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1rem;;
+  margin-top: 1rem;
+  height: auto;
+  max-width: 130px;
+  max-height: 260px;
+  border-radius: 5px;
+}
 
-  .img-carta{
-    padding-bottom: 5px;
-  }
+.img-carta{
+  padding-bottom: 5px;
+}
 
-  .img-carta:hover{
-    transform: scale(1.1);
-  transition: all 200ms ease-in;
-  }
-
+.img-carta:hover{
+  transform: scale(1.1);
+transition: all 200ms ease-in;
+}
 
 
 .carta img {
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 
 .text-img{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  font-size: 15px;
-  margin-top: 7px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 600;
+font-size: 15px;
+margin-top: 7px;
 }
 
 .show {
-    opacity: 1;
-    visibility: visible; 
-    width: 80%;
-    margin-left: 1.6rem;
-    margin-right: 1.6rem;
-    cursor: pointer;
-    transition: opacity 1000ms , visibility 1000ms, width 0.2s , margin 1000ms ;
-    display: block;
-  }
-  
-  /* Style the buttons */
+  opacity: 1;
+  visibility: visible; 
+  width: 80%;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  cursor: pointer;
+  transition: opacity 1000ms , visibility 1000ms, width 0.2s , margin 1000ms ;
+  display: block;
+}
+
+/* Style the buttons */
 .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  
-  /* Add a light grey background on mouse-over */
-  .btn:hover {
-    background-color: #ddd;
-  }
-  
-  /* Add a dark background to the active button */
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
 
 #myInput {
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 50%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px ; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
-  margin-right: 15px;
+background-image: url('https://img.icons8.com/android/24/000000/search.png'); /* Add a search icon to input */
+background-position: 10px 12px; /* Position the search icon */
+background-repeat: no-repeat; /* Do not repeat the icon image */
+width: 50%; /* Full-width */
+font-size: 16px; /* Increase font-size */
+padding: 12px 20px 12px ; /* Add some padding */
+border: 1px solid #ddd; /* Add a grey border */
+margin-bottom: 12px; /* Add some space below the input */
+margin-right: 15px;
 }
-  
+
 #myUL {
-  /* Remove default list styling */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+/* Remove default list styling */
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  #myUL{
+    width: 10rem;
+  }
 }
 
 #myUL .arc a {
-  border: 1px solid #ddd; /* Add a border to all links */
-  margin-top: 10px; /* Prevent double borders */
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: #f6f6f6; /* Grey background color */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove default text underline */
-  font-size: 18px; /* Increase the font-size */
-  color: black; /* Add a black text color */
-  display: block; /* Make it into a block element to fill the whole list */
+border: 1px solid #ddd; /* Add a border to all links */
+margin-top: 10px; /* Prevent double borders */
+margin-left: 5px;
+margin-right: 5px;
+background-color: #f6f6f6; /* Grey background color */
+padding: 12px; /* Add some padding */
+text-decoration: none; /* Remove default text underline */
+font-size: 18px; /* Increase the font-size */
+color: black; /* Add a black text color */
+display: block; /* Make it into a block element to fill the whole list */
 }
 
 #myUL .arc a:hover:not(.header) {
-  background-color: #eee; /* Add a hover effect to all links, except for headers */
+background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
-
