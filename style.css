@@ -7,7 +7,7 @@
 
 body {
   background-color: rgba(115, 141, 150, 0.1);
-  overflow-x: hidden;
+  
 }
 
 #header{
@@ -23,9 +23,9 @@ width: 100%;
 }
 
 /*script*/
-.container {
+/* .container {
 overflow: hidden;
-}
+} */
 
 
 #myBtnContainer input[type=text] {
@@ -39,7 +39,7 @@ overflow: hidden;
   transition: opacity 1000ms , visibility  1000ms, width 1000ms , margin 1000ms ;
   opacity: 0;
   visibility: hidden;
-  width: 0;
+  width: 100%;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 1rem;;
@@ -146,4 +146,14 @@ display: block; /* Make it into a block element to fill the whole list */
 
 #myUL .arc a:hover:not(.header) {
 background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+
+.newRandom{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 1rem;
+  overflow-x: scroll ;
+  
 }
