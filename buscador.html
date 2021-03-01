@@ -12,16 +12,46 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="newSection text-center pb-5">
-        <button class="mb-5" onclick="RandomCards();">
-            push me
-        </button>
-        <div class="container d-flex justify-content-center flex-row mb-5 h-100 flex-wrap" id="imagen">
-    
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container-fluid">
+            <a style="color: white;" class="navbar-brand" href="#">La vía del tarot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link" href="./index.html">Buscar cartas</a>
+                    <a class="nav-link" href="./buscador.html">Lectura de cartas</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center" id="header">
+        <img id="header-img" src="./img/logo2.png"> 
     
-    <div id="cards-container" class="container my-5 h-100">
+    </div>
+
+    <div>
+        <h4 class="container d-flex justify-content-center mb-4">Lectura de cartas</h4>
+    </div>
+    <div class="boton">
+        <p class="text-center">Presiona el botón y saca la cantidad de cartas que desees
+        obtener para tu lectura
+        </p>
+    </div>
+    <div  class="container d-flex justify-content-center mb-4">
+        <button class="btn-random" onclick="RandomCards();">
+            Obtener carta
+        </button>
+    </div>
+    <div class="container d-flex justify-content-center flex-row mb-5 h-100 flex-wrap" id="imagen">
+        
+    </div>
+
+    <div id= "cards-container" class="container my-5 h-100">
         <div id="myUL" class="container d-flex justify-content-center flex-row mb-5 h-100 flex-wrap">
             
             <div class="carta arc arcanos mayores ">
@@ -216,9 +246,8 @@
                     <h6 class="text-img">5 de oros</h6>
                 </a>
             </div>
-            
         </div>
-    </div>
+    </div>    
 
 
 

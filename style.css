@@ -9,7 +9,7 @@ body {
   background-color: rgba(115, 141, 150, 0.1);
   
 }
-
+/*navbar*/
 .navbar{
   background-color: #03588C;
 }
@@ -19,19 +19,18 @@ body {
 }
 
 .navbar-nav{
- margin-left: 700px;
+  margin-left: 700px;
 
 }
 
 @media only screen and (max-width: 420px) {
   .navbar-nav{
     margin-left: 0;
-   
-   }
+  }
 }
 
 .navbar-brand{
-  margin-left: 70px;
+  margin-left: 30px;
 }
 
 .nav-link{
@@ -44,7 +43,9 @@ body {
     color: white;
   }
 }
+/*end of navbar*/
 
+/*header and bottons*/
 #header{
   margin-top: 08rem;
   width: 100%;
@@ -53,64 +54,12 @@ body {
 }
 
 #header-img {
-max-width: 386px;
-width: 100%;
+  max-width: 386px;
+  width: 100%;
 }
 
 #myBtnContainer input[type=text] {
   padding-left: 50px;
-}
-
-/* The "show" class is added to the filtered elements */
-.carta {
-  transition: opacity 1000ms , visibility  1000ms, width 1000ms , margin 1000ms ;
-  opacity: 0;
-  visibility: hidden;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 1rem;;
-  margin-top: 1rem;
-  height: auto;
-  max-width: 130px;
-  max-height: 260px;
-  border-radius: 5px;
-}
-
-.img-carta{
-  padding-bottom: 5px;
-}
-
-.img-carta:hover{
-  transform: scale(1.1);
-transition: all 200ms ease-in;
-}
-
-
-.carta img {
-width: 100%;
-height: auto;
-}
-
-.text-img{
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: 600;
-font-size: 15px;
-margin-top: 7px;
-}
-
-.show {
-  opacity: 1;
-  visibility: visible; 
-  width: 80%;
-  margin-left: 1.6rem;
-  margin-right: 1.6rem;
-  cursor: pointer;
-  transition: opacity 1000ms , visibility 1000ms, width 0.2s , margin 1000ms ;
-  display: block;
 }
 
 /* Style the buttons */
@@ -134,22 +83,23 @@ margin-top: 7px;
 }
 
 #myInput {
-background-image: url('https://img.icons8.com/android/24/000000/search.png'); /* Add a search icon to input */
-background-position: 10px 12px; /* Position the search icon */
-background-repeat: no-repeat; /* Do not repeat the icon image */
-width: 50%; /* Full-width */
-font-size: 16px; /* Increase font-size */
-padding: 12px 20px 12px ; /* Add some padding */
-border: 1px solid #ddd; /* Add a grey border */
-margin-bottom: 12px; /* Add some space below the input */
-margin-right: 15px;
+  background-image: url('https://img.icons8.com/android/24/000000/search.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 50%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px ; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  margin-right: 15px;
 }
 
 #myUL {
-/* Remove default list styling */
-list-style-type: none;
-padding: 0;
-margin: 0;
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 400px) {
@@ -174,13 +124,62 @@ display: block; /* Make it into a block element to fill the whole list */
 #myUL .arc a:hover:not(.header) {
 background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
+/*end of header and bottons*/
+
+/*Cards*/
+/* The "show" class is added to the filtered elements */
+.carta {
+  transition: opacity 1000ms , visibility  1000ms, width 1000ms , margin 1000ms ;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1rem;;
+  margin-top: 1rem;
+  height: auto;
+  max-width: 130px;
+  max-height: 260px;
+  border-radius: 5px;
+}
+
+.img-carta{
+  padding-bottom: 5px;
+}
+
+.img-carta:hover{
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
 
 
-.newRandom{
+.carta img {
+  width: 100%;
+  height: auto;
+}
+
+.text-img{
+  text-align: center;
   display: flex;
   justify-content: center;
-  align-content: center;
-  padding-bottom: 1rem;
-  overflow-x: scroll ;
-  
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 7px;
 }
+
+.arcanos{
+  display: none; 
+}
+
+.show {
+  opacity: 1;
+  visibility: visible; 
+  width: 80%;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  cursor: pointer;
+  transition: opacity 1000ms , visibility 1000ms, width 0.2s , margin 1000ms ;
+  display: block;
+}
+
