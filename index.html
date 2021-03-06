@@ -6,48 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Font-->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap" rel="stylesheet">
     <title>Tarot</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    
+    
+    <div id="header" class="container d-flex justify-content-center">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <!-- <h2 id="isotype">La Lámpara del Ermitaño</h2> -->
+                <img id="header-img" class="text-center" src="./img/logo-total1.png"> 
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 ">
+                <p id="welcome-text">
+                    Bienvenidos a la <b>Lámpara del Ermitaño</b>, una página dedicada al estudio profundo 
+                del Tarot de Marsella restaurado por Philippe Camoin y Alejandro Jodorowsky. 
+                En este sitio web encontrarás información amplia sobre los Arcanos Mayores y Arcanos Menores,
+                una sección de tiradas al azar, y muchas sorpresas más.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a style="color: white;" class="navbar-brand" href="./index.html">La vía del tarot</a>
+            <!-- <a style="color: white;" class="navbar-brand" href="./index.html"></a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                    <a class="nav-link" href="./index.html">Buscar cartas</a>
+                    <a class="nav-link" href="./index.html">Buscador de cartas</a>
                     <a class="nav-link" href="./buscador.html">Lectura de cartas</a>
-                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                    <a class="nav-link" href="./buscador.html">Mazos de Tarot</a>
+                    <a class="nav-link" href="./buscador.html">Libros de Tarot</a>
+                    <a class="nav-link" href="./buscador.html">Contacto</a>
                 </div>
             </div>
         </div>
     </nav>
-    
-    <div class="container d-flex justify-content-center" id="header">
-        <img id="header-img" src="./img/logo2.png"> 
-    
-    </div>
+
+    <section class="mb-5">
+
+    </section>
 
     <div class="container d-flex justify-content-center mb-5 flex-wrap" id="myBtnContainer">
-        <input style="min-width: 350px;" class="input mb-4"  type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar carta">
+        <input style="" class="input mb-4"  type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar Arcano">
         <div class="d-flex justify-content-center flex-nowrap" style="max-height: 50px;" >
-            <button class="btn" onclick="filterSelection('all')"> Mostrar todos</button>
-            <button class="btn" onclick="filterSelection('mayores')"> Mayores</button>
-            <button class="btn" onclick="filterSelection('menores')"> Menores</button>
+            <button class="btn" onclick="filterSelection('all')"><p class="btn-filter-text">Mostrar todos</p></button>
+            <button class="btn" onclick="filterSelection('mayores')"><p class="btn-filter-text">Mayores</p></button>
+            <button class="btn" onclick="filterSelection('menores')"><p class="btn-filter-text">Menores</p></button>
         </div>
     </div>
 
-<div class="container my-5 h-100">
+<div id="arcanos-bg" class="container my-5 h-100">
     <div id="myUL" class="container d-flex justify-content-center flex-row mb-5 h-100 flex-wrap">
         
         <div class="carta arc arcanos mayores ">

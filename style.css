@@ -7,7 +7,8 @@
 
 body {
   background-color: rgba(115, 141, 150, 0.1);
-  
+  font-family: 'IM Fell French Canon', serif;
+  /* font-family: 'IM Fell French Canon SC', serif; */
 }
 /*navbar*/
 .navbar{
@@ -19,9 +20,18 @@ body {
 }
 
 .navbar-nav{
+margin-left: auto;
+margin-right: auto;
+}
+
+/* #navbarNavAltMarkup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   margin-left: 700px;
 
-}
+} */
 
 @media only screen and (max-width: 420px) {
   .navbar-nav{
@@ -30,17 +40,24 @@ body {
 }
 
 .navbar-brand{
-  margin-left: 30px;
+  margin-left: 170px;
 }
 
 .nav-link{
-  margin-right: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.nav-link:hover{
+  font-weight: 600;
+  margin-right: 50px;
 }
 
 @media only screen and (max-width: 420px) {
   .navbar-toggler {
     margin-right: 20px;
     color: white;
+
   }
 }
 /*end of navbar*/
@@ -50,12 +67,21 @@ body {
   margin-top: 08rem;
   width: 100%;
   height: auto;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
+}
+
+/* #isotype{
+  font-family: 'IM Fell French Canon SC', serif;
+} */
+
+#welcome-text{
+  font-size: 18px;
+  text-align: justify;
 }
 
 #header-img {
-  max-width: 386px;
   width: 100%;
+  height: auto;
 }
 
 #myBtnContainer input[type=text] {
@@ -66,9 +92,33 @@ body {
 .btn {
   border: none;
   outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
+  padding: 12px 16px 12px 12px;
+  background-color: #dfdfdfde;
   cursor: pointer;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 420px) {
+  .btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+  }
+}
+@media only screen and (max-width: 320px) {
+  .btn {
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .btn .btn-filter-text {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
 /* Add a light grey background on mouse-over */
@@ -82,16 +132,21 @@ body {
   color: white;
 }
 
+
+/*cards section*/
+
 #myInput {
   background-image: url('https://img.icons8.com/android/24/000000/search.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 50%; /* Full-width */
+  min-width: 320px;
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px ; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
   margin-right: 15px;
+  margin-left: 15px;
 }
 
 #myUL {
@@ -102,11 +157,6 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 400px) {
-  #myUL{
-    width: 10rem;
-  }
-}
 
 #myUL .arc a {
   border: 1px solid #ddd; /* Add a border to all links */
@@ -142,6 +192,14 @@ body {
   max-height: 260px;
   border-radius: 5px;
 }
+
+/* @media only screen and (max-width: 400px) and (min-width: 280px) {
+ .carta{
+    width: 100%;
+    margin:0px;
+    margin-right: 0px;;
+  }
+} */
 
 .img-carta{
   padding-bottom: 5px;
@@ -186,3 +244,16 @@ body {
   display: block;
 }
 
+@media only screen and (max-width: 400px) {
+  .show{
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+  }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .show{
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
+    }
+    }
