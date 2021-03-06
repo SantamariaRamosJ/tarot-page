@@ -73,9 +73,25 @@ body {
 }
 
 #header-img {
-    width: 100%;
+    width: 50%;
+    min-width: 300px;
     height: auto;
 }
+
+/*Ipad*/
+@media only screen and (max-width: 768px) and (min-width: 413px) {
+    #header-img {
+        width: 80%;
+    }
+    }
+
+/*Ipad Pro*/
+@media only screen and (max-width: 1024px) and (min-width: 767px) {
+    #header-img {
+        width: 80%;
+    }
+    }
+
 
 /* The "show" class is added to the filtered elements */
 .carta {
@@ -229,10 +245,12 @@ body {
     z-index: -10;
     background: white;
     border-radius: 15px;
+    overflow-y: visible;
 }
 
 @media screen and (max-width: 420px) and (min-width: 280px) {
     .modal-overlay, .modal-overlay1{
+        top: 50px;
         left: 0;
         right: 0;
         width: 100%;
@@ -249,6 +267,7 @@ body {
 
 @media screen and (max-width: 1366px) and (min-width: 1025px) {
     .modal-overlay, .modal-overlay1{
+        top: 200px;
         left: 0;
         right: 0;
         width: 50%;
@@ -343,7 +362,7 @@ body {
 }
 
 #footer-img{
-width: 30rem;
+width: 26rem;
 height: auto;
 }
 
@@ -378,7 +397,6 @@ height: auto;
 }
 .items-footer{
 font-size: 12px;
-
 }
 }
 
@@ -390,7 +408,6 @@ height: auto;
 }
 .items-footer{
 font-size: 12px;
-
 }
 }
 
@@ -402,7 +419,6 @@ height: auto;
 }
 .items-footer{
 font-size: 10px;
-
 }
 }
 
@@ -414,7 +430,6 @@ height: auto;
 }
 .items-footer{
 font-size: 10px;
-
 }
 }
 
@@ -425,7 +440,6 @@ font-size: 10px;
 }
 .items-footer{
     font-size: 12px;
-    
     }
 }
 
