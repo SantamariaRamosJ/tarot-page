@@ -8,31 +8,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style-random.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style-random.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap" rel="stylesheet">
+    <!--Head icon-->
+    <link rel="icon" href="https://img.icons8.com/windows/32/000000/oil-lamp.png">
+    <title>La Lámpara del Ermitaño - Tarot</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    
+    
+    <div id="header" class="d-flex justify-content-center">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <img id="header-img" class="text-center" src="./img/logo-total1.png"> 
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 ">
+                <p id="welcome-text">
+                    Bienvenidos a la <b>Lámpara del Ermitaño</b>, una página dedicada al estudio profundo 
+                del Tarot de Marsella restaurado por Philippe Camoin y Alejandro Jodorowsky. 
+                En este sitio web encontrarás información amplia sobre los Arcanos Mayores y Arcanos Menores,
+                una sección de tiradas al azar, y muchas sorpresas más.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a style="color: white;" class="navbar-brand" href="#">La vía del tarot</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link" href="./index.html">Buscar cartas</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    <a class="nav-link" href="./index.html">Buscador de cartas</a>
                     <a class="nav-link" href="./buscador.html">Lectura de cartas</a>
+                    <a class="nav-link" href="./buscador.html">Mazos de Tarot</a>
+                    <a class="nav-link" href="./buscador.html">Libros de Tarot</a>
+                    <a class="nav-link" href="./buscador.html">Contacto</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container d-flex justify-content-center" id="header">
-        <img id="header-img" src="./img/logo2.png"> 
-    
-    </div>
+    <section class="mb-5">
+
+    </section>
 
     <div>
         <h4 class="container d-flex justify-content-center mb-4">Lectura de cartas</h4>
@@ -66,7 +90,7 @@
                     <h6 class="text-img">El Mago</h6>
                 </a>
             </div> 
-            <!-- <div class="carta arc arcanos mayores ">
+            <div class="carta arc arcanos mayores ">
                 <a class="btn modal-btn">
                     <img class="img-carta" src="./img/papisa.jpg">
                     <h6 class="text-img">La Papisa</h6>
@@ -245,7 +269,7 @@
                     <img class="img-carta" src="./img/5-oros.jpg">
                     <h6 class="text-img">5 de oros</h6>
                 </a>
-            </div> -->
+            </div>
         </div>
     </div>    
 
@@ -293,7 +317,34 @@
     </div>
 </div>
 
-
+<div class="footer container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center align-items-center">
+            <img id="footer-img" src="./img/logo-total1.png"> 
+        </div>
+        <div class="col-4 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center align-items-end">
+            <p class="items-footer">Inicio</p>
+        </div>
+        <div class="col-4 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center align-items-end">
+            <p class="items-footer">Buscador de cartas</p>
+        </div>
+        <div class="col-4 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center align-items-end">
+            <p class="items-footer">Lectura de cartas</p>
+        </div>
+        <div class="col-4 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center align-items-end">
+            <p class="items-footer">Mazos de tarot</p>
+        </div>
+        <div class="col-4 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center align-items-end">
+            <p class="items-footer">Libros de tarot</p>
+        </div>
+        <div class="col-4 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center align-items-end">
+            <p class="items-footer">Contacto</p>
+        </div>
+        <div class="copyright col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center align-items-end">
+            <p class="m-0">© Copyright 2021</p> 
+        </div>
+    </div>
+</div>
 
 
     

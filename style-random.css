@@ -2,17 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
-    }
-    
-body {
-    background-color: rgba(115, 141, 150, 0.1);
 }
 
 #cards-container{
     display: none;
 }
 
+body {
+    background-color: rgba(115, 141, 150, 0.1);
+    font-family: 'IM Fell French Canon', serif;
+}
+
+/*navbar*/
 .navbar{
     background-color: #03588C;
 }
@@ -22,23 +23,29 @@ body {
 }
 
 .navbar-nav{
-    margin-left: 700px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 420px) {
 .navbar-nav{
     margin-left: 0;
-    
-    }
+}
 }
 
 .navbar-brand{
-    margin-left: 30px;
+    margin-left: 170px;
 }
 
 .nav-link{
-    margin-right: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.nav-link:hover{
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 420px) {
@@ -47,28 +54,32 @@ body {
     color: white;
 }
 }
+/*end of navbar*/
 
+/*header and bottons*/
 #header{
-    margin-top: 08rem;
     width: 100%;
     height: auto;
-    margin-bottom: 7rem;
+    background-color: white;
+    padding-top: 08rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#welcome-text{
+    font-size: 18px;
+    text-align: justify;
 }
 
 #header-img {
-    max-width: 386px;
     width: 100%;
-}
-
-#myBtnContainer input[type=text] {
-    padding-left: 50px;
+    height: auto;
 }
 
 /* The "show" class is added to the filtered elements */
 .carta {
     transition: opacity 1000ms , visibility  1000ms, width 1000ms , margin 1000ms ;
-    /* opacity: 0; */
-    /* visibility: hidden; */
     width: 100%;
     margin-left: 15px;
     margin-right: 15px;
@@ -88,7 +99,6 @@ body {
     width: 100%;
     height: auto;
     transition: opacity 1000ms , visibility  1000ms, width 1000ms , margin 1000ms ;
-
 }
 
 .img-carta:hover{
@@ -109,6 +119,7 @@ body {
     font-weight: 600;
     font-size: 15px;
     margin-top: 7px;
+    color:#03588c;
 }
 
 .show {
@@ -192,12 +203,9 @@ body {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
 
-
 /*modal*/
 .modal-btn, .modal-btn1 {
     margin-top: 2rem;
-    /* background: rgb(73, 166, 233); 
-    border-color: rgb(73, 166, 233);  */
     color: white;
 }
 
@@ -213,9 +221,6 @@ body {
     right: 10rem;
     width: 100%;
     height: auto;
-    /* max-height: 560px; */
-    /* padding-top: 20px; */
-    /* background: blue; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,9 +255,7 @@ body {
     }
     }
 
-
-
-    /*open modal*/
+/*open modal*/
 .open-modal, .open-modal1 {
     visibility: visible;
     z-index: 10;
@@ -326,4 +329,158 @@ body {
 .ver-articulo-btn:hover{
     background-color: #666;
     color: white;
+}
+
+/*footer*/
+.footer{
+    width: 100%;
+    height: 15rem;
+    background-color: #03588c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+#footer-img{
+width: 30rem;
+height: auto;
+}
+
+.copyright, .items-footer{
+padding-top: 20px;
+font-size: 15px;
+color: white;
+}
+
+.items-footer{
+margin-right: auto;
+margin-left: auto;
+cursor: pointer;
+}
+
+.items-footer:hover{
+font-weight: 800;
+}
+
+/*Ipad*/
+@media only screen and (max-width: 768px) and (min-width: 413px) {
+.items-footer{
+font-size: 12px;
+}
+}
+
+/*Iphone X/ Iphone 6/7/8*/
+@media only screen and (max-width: 375px) and (min-width: 359px) {
+#footer-img{
+width: 15rem;
+height: auto;
+}
+.items-footer{
+font-size: 12px;
+
+}
+}
+
+/*Iphone6/7/8/Plus*/
+@media only screen and (max-width: 414px) and (min-width: 410px) {
+#footer-img{
+width: 15rem;
+height: auto;
+}
+.items-footer{
+font-size: 12px;
+
+}
+}
+
+/*Iphone 5/5SE*/
+@media only screen and (max-width: 320px) and (min-width: 279px) {
+#footer-img{
+width: 15rem;
+height: auto;
+}
+.items-footer{
+font-size: 10px;
+
+}
+}
+
+/*Moto G4/ Galaxy 5/SE*/
+@media only screen and (max-width: 360px) and (min-width: 319px) {
+#footer-img{
+width: 15rem;
+height: auto;
+}
+.items-footer{
+font-size: 10px;
+
+}
+}
+
+@media only screen and (max-width: 874px) and (min-width: 769px) {
+#footer-img{
+    width: 20rem;
+    height: auto;
+}
+.items-footer{
+    font-size: 12px;
+    
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 540px) {
+#footer-img{
+    width: 20rem;
+    height: auto;
+}
+.items-footer{
+    font-size: 11px;
+    
+    }
+}
+
+@media only screen and (max-width: 409px) and (min-width: 361px) {
+#footer-img{
+    width: 20rem;
+    height: auto;
+}
+.items-footer{
+    font-size: 11px;
+    
+    }
+}
+
+@media only screen and (max-width: 684px) and (min-width: 414px) {
+    #footer-img{
+    width: 20rem;
+    height: auto;
+    }
+    .items-footer{
+    font-size: 09px;
+    
+    }
+    }
+
+    /*scrollbar*/
+    /* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #03588c;
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #084298;
 }
