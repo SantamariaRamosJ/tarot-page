@@ -123,6 +123,16 @@ margin-right: auto;
   }
 }
 
+@media only screen and (max-width: 371px) and (min-width: 321px) {
+  .btn .btn-filter-text {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
 /* Add a light grey background on mouse-over */
 .btn:hover {
   background-color: #ddd;
@@ -151,7 +161,19 @@ margin-right: auto;
   margin-left: 15px;
 }
 
+/*Ipad Pro*/
+@media only screen and (max-width: 1024px) and (min-width: 767px) {
+  #myInput {
+    width: 90%;
+  }
+  }
 
+/*Ipad*/
+@media only screen and (max-width: 768px) and (min-width: 413px) {
+  #myInput {
+    width: 80%;
+  }
+  }
 
 #myUL {
   /* Remove default list styling */
@@ -196,14 +218,6 @@ margin-right: auto;
   border-radius: 5px;
 }
 
-/* @media only screen and (max-width: 400px) and (min-width: 280px) {
- .carta{
-    width: 100%;
-    margin:0px;
-    margin-right: 0px;;
-  }
-} */
-
 .img-carta{
   padding-bottom: 5px;
 }
@@ -213,12 +227,10 @@ margin-right: auto;
   transition: all 200ms ease-in;
 }
 
-
 .carta img {
   width: 100%;
   height: auto;
   transition: opacity 1000ms , visibility 1000ms, width 0.2s , margin 1000ms ;
-
 }
 
 .text-img{
@@ -233,7 +245,6 @@ margin-right: auto;
 
 .arcanos{
   display: none; 
-
 }
 
 .show {
@@ -247,21 +258,7 @@ margin-right: auto;
   display: block;
 }
 
-/* @media only screen and (max-width: 405px) and (min-width: 279px) {
-  .show{
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-  }
-  }
-
-  @media screen and (max-width: 404px) and (min-width: 280px) {
-    .show{
-      margin-left: 0;
-      margin-right: 0;
-    }
-    } */
-
-    /*Ipad*/
+  /*Ipad*/
 @media only screen and (max-width: 768px) and (min-width: 413px) {
   .show{
     margin-left: 0.8rem;
