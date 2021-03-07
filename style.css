@@ -66,7 +66,6 @@ margin-right: auto;
   padding-right: 4rem;
 }
 
-
 #welcome-text{
   font-size: 18px;
   text-align: justify;
@@ -95,8 +94,6 @@ margin-right: auto;
   .btn {
     margin-left: 5px;
     margin-right: 5px;
-    /* padding-top: 30px;
-    padding-bottom: 30px; */
   }
 }
 @media only screen and (max-width: 320px) {
@@ -136,9 +133,7 @@ margin-right: auto;
   color: white;
 }
 
-
 /*cards section*/
-
 #myInput {
   background-image: url('https://img.icons8.com/android/24/000000/search.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
@@ -313,7 +308,6 @@ margin-right: auto;
   }
   .items-footer{
     font-size: 12px;
-    
     }
   }
 
