@@ -1,0 +1,30 @@
+Tiradas
+
+*Leer tres cartas*
+
+Estrategia 1
+   A         B         C 
+"PASADO" "PRESENTE" "FUTURO"
+
+Estrategia 2
+    A    ->     B    ->     C 
+"COMIENZO" "DESARROLLO" "RESULTADO"
+
+Estrategia 3 (causas de la situación presente)
+   A    <->   B   <->   C
+"PROCESO" "PROCESO" "COMIENZO"
+
+Estrategia 4 (trío familiar y su influencia en el consultante)
+          A          ->          B       <-           C
+Influencias femeninas | Elemento central | Influencias masculinas
+
+Estrategia 5 (la unión de las fuerzas: recepción-acción)
+
+          A       ->         B       <-        C
+Fuerzas receptivas | Elemento central | Fuerzas activas
+
+
+*Leer cuatro cartas o más*
+
+
+*Leer diez cartas o más*

@@ -66,6 +66,14 @@
         obtener para tu lectura
         </p>
     </div>
+    <div class="container d-flex justify-content-center mb-5 flex-wrap" id="myBtnContainer">
+        <!-- <input class="input mb-4"  type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar Arcano"> -->
+        <div class="d-flex justify-content-center flex-nowrap" style="max-height: 50px;" >
+            <button class="btn" onclick="filterSelection('all')"><p class="btn-filter-text">Utilizar todos</p></button>
+            <button class="btn" onclick="filterSelection('mayores')"><p class="btn-filter-text">Sólo Mayores</p></button>
+            <button class="btn" onclick="filterSelection('menores')"><p class="btn-filter-text">Sólo Menores</p></button>
+        </div>
+    </div>
     <div  class="container d-flex justify-content-center mb-4">
         <button class="btn-random" onclick="RandomCards();">
             Obtener carta
@@ -805,5 +813,6 @@
 
 
 <script src="./randomScript.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

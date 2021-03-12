@@ -149,6 +149,58 @@ body {
 }
 
 /* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px 12px 12px;
+    /* background-color: #dfdfdfde; */
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 420px) {
+.btn {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+}
+@media only screen and (max-width: 320px) {
+.btn {
+    padding-bottom: 25px;
+}
+}
+@media only screen and (max-width: 320px) {
+.btn .btn-filter-text {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 1
+    2px;
+    margin-bottom: 0;
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 371px) and (min-width: 321px) {
+.btn .btn-filter-text {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+}
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+background-color: #666;
+color: white;
+}
+
 .btn-random {
     border: none;
     outline: none;
@@ -218,26 +270,44 @@ body {
 }
 
 /*modal*/
-.modal-btn, .modal-btn1, .modal-btn2, .modal-btn3, .modal-btn4, .modal-btn5, .modal-btn6, .modal-btn7, .modal-btn8,
-.modal-btn9, .modal-btn10, .modal-btn11, .modal-btn12, .modal-btn13, .modal-btn14, .modal-btn15, .modal-btn16,
-.modal-btn17, .modal-btn18, .modal-btn19, .modal-btn20, .modal-btn21 {
+.modal-btn, .modal-btn1, .modal-btn2, 
+.modal-btn3, .modal-btn4, .modal-btn5, 
+.modal-btn6, .modal-btn7, .modal-btn8,
+.modal-btn9, .modal-btn10, .modal-btn11, 
+.modal-btn12, .modal-btn13, .modal-btn14, 
+.modal-btn15, .modal-btn16,
+.modal-btn17, .modal-btn18, .modal-btn19, 
+.modal-btn20, .modal-btn21 {
     margin-top: 2rem;
     color: white;
 }
 
-.modal-btn:hover, .modal-btn1:hover, .modal-btn2:hover, .modal-btn3:hover, .modal-btn4:hover, .modal-btn5:hover, .modal-btn6:hover, 
-.modal-btn7:hover, .modal-btn8:hover, .modal-btn9:hover, .modal-btn10:hover, .modal-btn11:hover, .modal-btn12:hover, 
-.modal-btn13:hover, .modal-btn14:hover, .modal-btn15:hover, .modal-btn16:hover, .modal-btn17:hover, .modal-btn18:hover,
-.modal-btn19:hover, .modal-btn20:hover, .modal-btn21:hover {
+.modal-btn:hover, .modal-btn1:hover, 
+.modal-btn2:hover, .modal-btn3:hover, 
+.modal-btn4:hover, .modal-btn5:hover, 
+.modal-btn6:hover, 
+.modal-btn7:hover, .modal-btn8:hover, 
+.modal-btn9:hover, .modal-btn10:hover, 
+.modal-btn11:hover, .modal-btn12:hover, 
+.modal-btn13:hover, .modal-btn14:hover, 
+.modal-btn15:hover, .modal-btn16:hover, 
+.modal-btn17:hover, .modal-btn18:hover,
+.modal-btn19:hover, .modal-btn20:hover, 
+.modal-btn21:hover {
     background: transparent;
     color: rgb(73, 166, 233); 
 }
 
-.modal-overlay, .modal-overlay1, .modal-overlay2, .modal-overlay3,
-.modal-overlay4, .modal-overlay5, .modal-overlay6, .modal-overlay7,
-.modal-overlay8, .modal-overlay9, .modal-overlay10, .modal-overlay11,
-.modal-overlay12, .modal-overlay13, .modal-overlay14, .modal-overlay15, 
-.modal-overlay16, .modal-overlay17, .modal-overlay18, .modal-overlay19, 
+.modal-overlay, .modal-overlay1, .modal-overlay2, 
+.modal-overlay3,
+.modal-overlay4, .modal-overlay5, 
+.modal-overlay6, .modal-overlay7,
+.modal-overlay8, .modal-overlay9, 
+.modal-overlay10, .modal-overlay11,
+.modal-overlay12, .modal-overlay13, 
+.modal-overlay14, .modal-overlay15, 
+.modal-overlay16, .modal-overlay17, 
+.modal-overlay18, .modal-overlay19, 
 .modal-overlay20, .modal-overlay21{
     position: fixed;
     top: 150px;
@@ -257,10 +327,15 @@ body {
 }
 
 @media screen and (max-width: 420px) and (min-width: 280px) {
-.modal-overlay, .modal-overlay1, .modal-overlay2, .modal-overlay3,
-.modal-overlay4, .modal-overlay5, .modal-overlay6, .modal-overlay7,
-.modal-overlay12, .modal-overlay13, .modal-overlay14, .modal-overlay15, 
-.modal-overlay16, .modal-overlay17, .modal-overlay18, .modal-overlay19, 
+.modal-overlay, .modal-overlay1, .modal-overlay2, 
+.modal-overlay3,
+.modal-overlay4, .modal-overlay5, 
+.modal-overlay6, .modal-overlay7, .modal-overlay8,
+.modal-overlay9, .modal-overlay10, .modal-overlay11
+.modal-overlay12, .modal-overlay13, 
+.modal-overlay14, .modal-overlay15, 
+.modal-overlay16, .modal-overlay17, 
+.modal-overlay18, .modal-overlay19, 
 .modal-overlay20, .modal-overlay21{
         top: 50px;
         left: 0;
@@ -270,11 +345,16 @@ body {
     }
 
 @media screen and (max-width: 1024px) and (min-width: 421px) {
-.modal-overlay, .modal-overlay1, .modal-overlay2, .modal-overlay3,
-.modal-overlay4, .modal-overlay5, .modal-overlay6, .modal-overlay7,
-.modal-overlay8, .modal-overlay9, .modal-overlay10, .modal-overlay11,
-.modal-overlay12, .modal-overlay13, .modal-overlay14, .modal-overlay15, 
-.modal-overlay16, .modal-overlay17, .modal-overlay18, .modal-overlay19, 
+.modal-overlay, .modal-overlay1, 
+.modal-overlay2, .modal-overlay3,
+.modal-overlay4, .modal-overlay5, 
+.modal-overlay6, .modal-overlay7,
+.modal-overlay8, .modal-overlay9, 
+.modal-overlay10, .modal-overlay11,
+.modal-overlay12, .modal-overlay13, 
+.modal-overlay14, .modal-overlay15, 
+.modal-overlay16, .modal-overlay17, 
+.modal-overlay18, .modal-overlay19, 
 .modal-overlay20, .modal-overlay21{
         left: 0;
         right: 0;
@@ -283,11 +363,16 @@ body {
     }
 
 @media screen and (max-width: 1366px) and (min-width: 1025px) {
-.modal-overlay, .modal-overlay1, .modal-overlay2, .modal-overlay3,
-.modal-overlay4, .modal-overlay5, .modal-overlay6, .modal-overlay7,
-.modal-overlay8, .modal-overlay9, .modal-overlay10, .modal-overlay11,
-.modal-overlay12, .modal-overlay13, .modal-overlay14, .modal-overlay15, 
-.modal-overlay16, .modal-overlay17, .modal-overlay18, .modal-overlay19, 
+.modal-overlay, .modal-overlay1, .modal-overlay2, 
+.modal-overlay3,
+.modal-overlay4, .modal-overlay5, 
+.modal-overlay6, .modal-overlay7,
+.modal-overlay8, .modal-overlay9, 
+.modal-overlay10, .modal-overlay11,
+.modal-overlay12, .modal-overlay13, 
+.modal-overlay14, .modal-overlay15, 
+.modal-overlay16, .modal-overlay17, 
+.modal-overlay18, .modal-overlay19, 
 .modal-overlay20, .modal-overlay21{
         top: 200px;
         left: 0;
@@ -297,21 +382,31 @@ body {
     }
 
 /*open modal*/
-.open-modal, .open-modal1, .open-modal2, .open-modal3,
-.open-modal4, .open-modal5, .open-modal6, .open-modal7,
-.open-modal8, .open-modal9, .open-modal10, .open-modal11,
-.open-modal12, .open-modal13, .open-modal14, .open-modal15,
-.open-modal16, .open-modal17, .open-modal18, .open-modal19, 
+.open-modal, .open-modal1, 
+.open-modal2, .open-modal3,
+.open-modal4, .open-modal5, 
+.open-modal6, .open-modal7,
+.open-modal8, .open-modal9, 
+.open-modal10, .open-modal11,
+.open-modal12, .open-modal13, 
+.open-modal14, .open-modal15,
+.open-modal16, .open-modal17, 
+.open-modal18, .open-modal19, 
 .open-modal20, .open-modal21 {
     visibility: visible;
     z-index: 10;
     }
 
-.modal-container, .modal-container1, .modal-container2, .modal-container3,
-.modal-container4, .modal-container5, .modal-container6, .modal-container7,
-.modal-container8, .modal-container9, .modal-container10, .modal-container11,
-.modal-container12, .modal-container13, .modal-container14, .modal-container15, 
-.modal-container16, .modal-container17, .modal-container18, .modal-container19, 
+.modal-container, .modal-container1, 
+.modal-container2, .modal-container3,
+.modal-container4, .modal-container5, 
+.modal-container6, .modal-container7,
+.modal-container8, .modal-container9, 
+.modal-container10, .modal-container11,
+.modal-container12, .modal-container13, 
+.modal-container14, .modal-container15, 
+.modal-container16, .modal-container17, 
+.modal-container18, .modal-container19, 
 .modal-container20, .modal-container21 {
     background: white;
     border-radius: 15px;
@@ -324,10 +419,14 @@ body {
     position: relative;
     }
 
-.close-btn, .close-btn1, .close-btn2, .close-btn3, .close-btn4, .close-btn5,
-.close-btn6, .close-btn7, .close-btn8, .close-btn9, .close-btn10, .close-btn11, 
-.close-btn12, .close-btn13, .close-btn14, .close-btn15, .close-btn16, .close-btn17,
-.close-btn18, .close-btn19, .close-btn20, .close-btn21 {
+.close-btn, .close-btn1, .close-btn2, 
+.close-btn3, .close-btn4, .close-btn5,
+.close-btn6, .close-btn7, .close-btn8, 
+.close-btn9, .close-btn10, .close-btn11, 
+.close-btn12, .close-btn13, .close-btn14, 
+.close-btn15, .close-btn16, .close-btn17,
+.close-btn18, .close-btn19, .close-btn20, 
+.close-btn21 {
     position: absolute;
     top: 0.5rem;
     right: 1rem;
@@ -354,11 +453,15 @@ body {
     transform: scale(1.3);
 }
 
-.modal-carta, .modal-carta1, .modal-carta2, .modal-carta3, .modal-carta4,
+.modal-carta, .modal-carta1, .modal-carta2, 
+.modal-carta3, .modal-carta4,
 .modal-carta5, .modal-carta6, .modal-carta7, 
-.modal-carta8, .modal-carta9, .modal-carta10, .modal-carta11, 
-.modal-carta12, .modal-carta13, .modal-carta14, .modal-carta15,
-.modal-carta16, .modal-carta17, .modal-carta18, .modal-carta19, 
+.modal-carta8, .modal-carta9, 
+.modal-carta10, .modal-carta11, 
+.modal-carta12, .modal-carta13,
+.modal-carta14, .modal-carta15,
+.modal-carta16, .modal-carta17, 
+.modal-carta18, .modal-carta19, 
 .modal-carta20, .modal-carta21{
     padding-bottom: 5px;
     border-radius: 5px;
@@ -368,21 +471,32 @@ body {
     height: auto;
 }
 
-.col-modal, .col-modal1, .col-modal2, .col-modal3, .col-modal4, 
-.col-modal5, .col-modal6, .col-modal7, .col-modal8, .col-modal9, 
-.col-modal10, .col-modal11, .col-modal12, .col-modal13, .col-modal14, 
-.col-modal15, .col-modal16, .col-modal17, .col-modal18, .col-modal19, 
+.col-modal, .col-modal1, .col-modal2, 
+.col-modal3, .col-modal4, 
+.col-modal5, .col-modal6, .col-modal7, 
+.col-modal8, .col-modal9, 
+.col-modal10, .col-modal11, .col-modal12, 
+.col-modal13, .col-modal14, 
+.col-modal15, .col-modal16, .col-modal17, 
+.col-modal18, .col-modal19, 
 .col-modal20, .col-modal21{
     text-align: center;
 }
 
-.title-modal-card, .title-modal-card1, .title-modal-card2, 
-.title-modal-card3, .title-modal-card4, .title-modal-card5,
-.title-modal-card6, .title-modal-card7, .title-modal-card8, 
-.title-modal-card9, .title-modal-card10, .title-modal-card11, 
-.title-modal-card12, .title-modal-card13, .title-modal-card14, 
-.title-modal-card15, .title-modal-card16, .title-modal-card17,
-.title-modal-card18, .title-modal-card19, .title-modal-card20, 
+.title-modal-card, .title-modal-card1, 
+.title-modal-card2, 
+.title-modal-card3, .title-modal-card4, 
+.title-modal-card5,
+.title-modal-card6, .title-modal-card7, 
+.title-modal-card8, 
+.title-modal-card9, .title-modal-card10, 
+.title-modal-card11, 
+.title-modal-card12, .title-modal-card13, 
+.title-modal-card14, 
+.title-modal-card15, .title-modal-card16, 
+.title-modal-card17,
+.title-modal-card18, .title-modal-card19, 
+.title-modal-card20, 
 .title-modal-card21 {
     display: flex;
     justify-content: center;
@@ -390,11 +504,17 @@ body {
     margin-top: 20px;
 }
 
-.text-modal, .text-modal1, .text-modal2, .text-modal3, .text-modal4, 
-.text-modal5, .text-modal6, .text-modal7, .text-modal8, 
-.text-modal9, .text-modal10, .text-modal11, .text-modal12, 
-.text-modal13, .text-modal14, .text-modal15, .text-modal16, .text-modal17,
-.text-modal18, .text-modal19, .text-modal20, .text-modal21{
+.text-modal, .text-modal1, .text-modal2, 
+.text-modal3, .text-modal4, 
+.text-modal5, .text-modal6, 
+.text-modal7, .text-modal8, 
+.text-modal9, .text-modal10, 
+.text-modal11, .text-modal12, 
+.text-modal13, .text-modal14, 
+.text-modal15, .text-modal16, 
+.text-modal17,
+.text-modal18, .text-modal19, 
+.text-modal20, .text-modal21{
     display: flex;
     justify-content: center;
     align-items: center;
