@@ -280,28 +280,46 @@ margin-right: auto;
     padding-top: 20px;
     font-size: 15px;
     color: white;
+    text-decoration: none;
+
   }
 
   .items-footer{
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
-    
-  }
-
-  .footer-link-item{
     text-decoration: none;
+    cursor:pointer;  
     color: white;
+    color: inherit; 
   }
 
   .items-footer:hover{
     font-weight: 800;
+    text-decoration: none;
+    color: white;
+    color: inherit;
   }
+
+  
+  .footer-link-item{
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-link-item:hover{
+    color: white;
+    text-decoration: none;
+  }
+
+
 
 /*Ipad*/
 @media only screen and (max-width: 768px) and (min-width: 413px) {
   .items-footer{
     font-size: 12px;
+    text-decoration: none;
+
   }
   }
 
@@ -313,6 +331,8 @@ margin-right: auto;
   }
   .items-footer{
     font-size: 12px;
+    text-decoration: none;
+
     }
   }
 
@@ -324,6 +344,8 @@ margin-right: auto;
   }
   .items-footer{
     font-size: 12px;
+    text-decoration: none;
+
     
     }
   }
@@ -336,6 +358,8 @@ margin-right: auto;
   }
   .items-footer{
     font-size: 10px;
+    text-decoration: none;
+
     
     }
   }
@@ -348,6 +372,8 @@ margin-right: auto;
   }
   .items-footer{
     font-size: 10px;
+    text-decoration: none;
+
     
     }
   }
@@ -359,6 +385,8 @@ margin-right: auto;
     }
     .items-footer{
       font-size: 12px;
+    text-decoration: none;
+
       
       }
     }
@@ -370,6 +398,8 @@ margin-right: auto;
     }
     .items-footer{
       font-size: 11px;
+    text-decoration: none;
+
       
       }
     }
@@ -381,6 +411,8 @@ margin-right: auto;
     }
     .items-footer{
       font-size: 11px;
+    text-decoration: none;
+
       
       }
     }
@@ -392,6 +424,8 @@ margin-right: auto;
       }
       .items-footer{
         font-size: 09px;
+    text-decoration: none;
+
         
         }
       }
